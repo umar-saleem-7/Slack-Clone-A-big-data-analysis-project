@@ -1,0 +1,121 @@
+.message-media {
+    margin-top: 0.5rem;
+}
+
+.message-media.loading {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+/* Audio / Voice Message */
+.audio-media {
+    max-width: 300px;
+}
+
+.audio-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+}
+
+.audio-icon {
+    font-size: 1.25rem;
+}
+
+.audio-player {
+    height: 36px;
+    flex: 1;
+    min-width: 0;
+}
+
+/* Fix audio player colors for own messages */
+.own-message .audio-container {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.own-message .audio-player {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+/* Image Media */
+.image-media {
+    max-width: 300px;
+}
+
+.message-image {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    object-fit: cover;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.message-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Image overlay for fullsize view */
+.image-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.image-fullsize {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.image-overlay .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.image-overlay .close-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Message file button */
+.message-file {
+    margin-top: 0.5rem;
+}

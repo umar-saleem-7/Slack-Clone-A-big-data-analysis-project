@@ -1,0 +1,169 @@
+.workspace-settings {
+    max-width: 600px;
+}
+
+.settings-section {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.settings-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.settings-section h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.info-item {
+    display: flex;
+    margin-bottom: 0.75rem;
+}
+
+.info-item label {
+    font-weight: 500;
+    color: #6b7280;
+    min-width: 120px;
+}
+
+.info-item span {
+    color: #1f2937;
+}
+
+.role-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.role-admin {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.role-member {
+    background: #e5e7eb;
+    color: #4b5563;
+}
+
+.workspace-id-box {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+}
+
+.workspace-id-box code {
+    flex: 1;
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    color: #1f2937;
+    word-break: break-all;
+}
+
+.help-text {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+.danger-zone {
+    background: #fef2f2;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #fecaca;
+}
+
+.danger-zone h3 {
+    color: #dc2626;
+}
+
+.danger-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.danger-action>div {
+    flex: 1;
+}
+
+.danger-action strong {
+    display: block;
+    color: #1f2937;
+    margin-bottom: 0.25rem;
+}
+
+.danger-action p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+.delete-confirm {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.delete-confirm p {
+    margin-bottom: 0.5rem;
+    color: #dc2626;
+}
+
+.delete-confirm input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #fecaca;
+    border-radius: 6px;
+    margin-bottom: 0.75rem;
+}
+
+.delete-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #374151;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.form-actions {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+}
